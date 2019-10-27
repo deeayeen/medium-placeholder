@@ -40,10 +40,10 @@ export default function MyCard(props) {
   const theme = useTheme();
 
   return (
-    <Card className={classes.card}>
+    <Card style={{ margin: "10px" }} className={classes.card}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h6" variant="h6">
+          <Typography component="h5" variant="h5">
             {props.song}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
