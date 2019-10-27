@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ContentLoader from "react-content-loader";
 import MyCard from "./MyCard";
+import FadeIn from "react-fade-in";
 
 export default class MyPlaceholder extends Component {
   constructor(props) {
@@ -60,13 +61,15 @@ export default class MyPlaceholder extends Component {
             />
           </ContentLoader>
         ) : (
-          <MyCard
-            song={"Hotline Bling"}
-            artist={"Drake"}
-            image={
-              "https://www.billboard.com/files/styles/article_main_image/public/media/drake-hotline-bling-video-still-2015-billbaord-650.jpg"
-            }
-          />
+          <FadeIn>
+            <MyCard
+              song={"Hotline Bling"}
+              artist={"Drake"}
+              image={
+                "https://www.billboard.com/files/styles/article_main_image/public/media/drake-hotline-bling-video-still-2015-billbaord-650.jpg"
+              }
+            />
+          </FadeIn>
         )}
       </div>
     );
