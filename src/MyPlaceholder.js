@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ContentLoader from "react-content-loader";
-import MyCard from "./MyCard";
+import MyCard from "./Card";
 import FadeIn from "react-fade-in";
 
 export default class MyPlaceholder extends Component {

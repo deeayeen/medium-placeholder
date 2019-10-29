@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyCard from "./MyCard";
+import MyCard from "./Card";
 import ReactLoading from "react-loading";
 
 export default class MyLoader extends Component {
