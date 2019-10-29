@@ -9,13 +9,13 @@ import FadeIn from "react-fade-in";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { finalLoad: false };
+    this.state = { loading: true };
   }
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then(response => response.json())
       .then(json => {
-        setTimeout(() => this.setState({ finalLoad: true }), 4000);
+        setTimeout(() => this.setState({ loading: false }), 4000);
       });
   }
   render() {
@@ -36,7 +36,7 @@ export default class App extends React.Component {
             </FadeIn>
             <div class="card shadow-lg p-3">
               <div style={{ width: "317.75px" }}>
-                {!this.state.finalLoad ? (
+                {this.state.loading ? (
                   <>
                     <Placeholder />
                     <Placeholder />
