@@ -40,7 +40,7 @@ export default function MyCard(props) {
   const theme = useTheme();
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} style={{ marginBottom: "4px" }}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
