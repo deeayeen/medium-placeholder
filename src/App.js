@@ -22,9 +22,9 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <div class="d-flex flex-column justify-content-center align-items-center">
+          <div className="d-flex flex-column justify-content-center align-items-center">
             <FadeIn>
-              <h1 class="mb-5" style={{ color: "white" }}>
+              <h1 className="mb-5" style={{ color: "white" }}>
                 Placeholder Example
                 <img
                   src={logo}
@@ -34,7 +34,7 @@ export default class App extends React.Component {
                 />
               </h1>
             </FadeIn>
-            <div class="card shadow-lg p-3">
+            <div className="card shadow-lg p-3">
               <div style={{ width: "317.75px" }}>
                 {this.state.loading ? (
                   <>
